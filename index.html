@@ -272,87 +272,54 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div id="programs-search" class="page-content">
     <div class="page-margin">
         <div class="programs-search-inner">
-            <form action="https://gocareinstitute.ac.ke/" method="get" id="programs-search-form" name="programs-search-form" role="search">
-    
-    <div class="form-group">
-        <label class="search-label" for="s">Search our website</label>
-    </div>
-    
-    <div class="row">
-        <div class="form-group col-lg-4 col-md-12">        
-            <select name="post_type[]" class="form-control" id="post_type">
-                <option value="page">-- Search entire website --</option>
-                <option value="programs">Search for courses</option>
-                <!--<option value="post">Search for articles</option>-->
-                <!--<option value="facilities">Search for facilities</option>-->
-            </select>
-        </div>
-        
-        <div class="form-group col-lg-4 col-md-12">        
-            <input class="form-control" type="text" id="search" name="s" value placeholder="Enter keyword(s), e.g. nursing" required>
-        </div>        
-
-        <div class="form-group col-lg-4 col-md-12">
-            <button class="nwh-btn-plain nwh-btn-secondary" type="submit">View Search Results</button>      
-        </div>
-    </div>
-    
-</form></div></div>
-</div>
-
-<!-- Bulletin & Ads Section -->
-<div id="bulletins--ads" class="page-content">
-    <div class="page-margin">
-        <div class="row">
-            <!-- News/Bulletin Ticker -->
-            <div class="col-sm-6">
-                
-                <div id="bulletin-ticker">
-                    
-                    <h2>Bulletin</h2>
-                
-                    
-                        <ul>
-                                                        <li>    
-                                <h6>
-                                    <a href="https://gocareinstitute.ac.ke/restoring-health/">Restoring Health</a>
-                                    <span class="bulletin-date"> / 25 Jan 2019</span>
-                                </h6>
-                                
-                            </li>
-                                                    </ul>
-                    
-                    <a href="https://gocareinstitute.ac.ke/news-bulletins/">
-                        <button class="nwh-btn-plain nwh-btn-secondary">More Articles</button>
-                    </a>
-
-                                    
+            <form id="programs-search-form" name="programs-search-form" role="search">
+                <div class="form-group">
+                    <label class="search-label" for="course">Search for Course</label>
                 </div>
-                
-            </div>
-            
-            <!-- Homepage Ads -->
-            <div class="col-sm-6">
-                
-                                
-                <div id="nwhc-ads"> 
-                    
-                                            
-                        <div>
-                                                        <a href="https://gocareinstitute.ac.ke/apply-now/">
-                                <img src="images/nwh-intake-ad.jpg" alt="GoCare Training Institute - Intake in Progress">  
-                            </a>
-                                                    </div>
-                    
-                                            
+                <div class="row">
+                    <div class="form-group col-lg-4 col-md-12">
+                        <select name="course" class="form-control" id="course">
+                            <option value="">-- Select a course --</option>
+                            <option value="Community Health Assistant Level 4.html">Community Health Assistant Level 4</option>
+                            <option value="Community Health Assistant Level 5.html">Community Health Assistant Level 5</option>
+                            <option value="Community Health Assistant Level 6.html">Community Health Assistant Level 6</option>
+                            <option value="Diploma in Community Health Assistant.html">Diploma in Community Health Assistant</option>
+                            <option value="Health Services Support Level 4.html">Health Services Support Level 4</option>
+                            <option value="Health Services Support Level 5.html">Health Services Support Level 5</option>
+                            <option value="Patient Attendant (HCA) Course.html">Patient Attendant (HCA) Course</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-4 col-md-12">
+                        <button class="nwh-btn-plain nwh-btn-secondary" type="submit">Search</button>
+                    </div>
                 </div>
-                
-                                
-            </div>
-            
+            </form>
         </div>
     </div>
 </div>
+
+<script>
+    // Get the form and select element by their IDs
+    const form = document.getElementById('programs-search-form');
+    const select = document.getElementById('course');
+
+    // Add a form submission event listener
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Get the selected value from the select element
+        const selectedCourse = select.value;
+
+        // Redirect the user to the selected course page
+        if (selectedCourse) {
+            window.location.href = selectedCourse;
+        }
+    });
+</script>
+
+
+
+
 
 <footer>
     <div class="content">
