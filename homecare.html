@@ -108,7 +108,38 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <meta name="msapplication-TileImage" content="https://gocareinstitute.ac.ke/wp-content/uploads/cropped-nwh-site-icon-270x270.png">
 
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5bd842b8084b9d001130e7a6&amp;product=inline-share-buttons" async="async"></script>
-    
+
+<style>
+  .section {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .section.slide-up {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .sub-heading {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .paragraph {
+    font-size: 16px;
+  }
+</style>
+
 </head>
 
 <body class="page-template page-template-nwhc_about_us page-template-nwhc_about_us-php page page-id-212">
@@ -311,41 +342,42 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
       </ul>
     </div>
-    
-    <div class="section">
+    <!-- Slider-->
+    <div class="departments-slider slider" data-slick='{"slidesToShow": 2, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 3000}'>
+    <div class="section" onclick="toggleSlide(this)">
       <h2 class="heading">THERAPY SERVICES</h2>
       <h3 class="sub-heading">Physiotherapy</h3>
       <p class="paragraph">
         What is Physiotherapy?
         Physiotherapy is treatment to restore, maintain, and make the most of a patient’s mobility, function, and well-being. Physiotherapy helps through physical rehabilitation, injury prevention, and health and fitness. Physiotherapists get you involved in your own recovery. 
         Physiotherapy helps to restore movement and function when someone is affected by injury, illness or disability. It can also help to reduce your risk of injury or illness in the future. It takes a holistic approach that involves the patient directly in their own care. 
-              </p>
+      </p>
     </div>
     
-    <div class="section">
+    <div class="section" onclick="toggleSlide(this)">
       <h2 class="sub-heading">Occupational Therapy and Speech Therapy Services at home</h2>
-           <p class="paragraph">
+      <p class="paragraph">
         What is Occupational therapy?
         Occupational therapy (OT) is an allied health profession that involves the therapeutic use of everyday activities, or occupations, to treat the physical, mental, developmental, and emotional ailments that impact a patient's ability to perform daily tasks. 
-              </p>
+      </p>
     </div>
-
-    <div class="section">
-            <h3 class="sub-heading">Speech Therapy Services at home</h3>
+  
+    <div class="section" onclick="toggleSlide(this)">
+      <h3 class="sub-heading">Speech Therapy Services at home</h3>
       <p class="paragraph">
         What is speech therapy?
         Speech therapy can help people who have difficulty speaking to communicate better and to break down the barriers that result from speech impediments. The goals of speech therapy include improving pronunciation, strengthening the muscles used in speech, and learning to speak correctly
-              </p>
+      </p>
     </div>
-
-    <div class="section">
+  
+    <div class="section" onclick="toggleSlide(this)">
       <h2 class="heading">DIET PLANNING AND NUTRITION CONSULTATION</h2>
       
       <p class="paragraph">
         Planning diets refers to determining what usual nutrient intake should be. Regardless of whether one is planning diets for individuals or groups, normal or special diets, the goal is to have diets that are nutritionally adequate, or conversely, to ensure that the probability of nutrient inadequacy or excess is acceptably low. An appointment with either a nutritionist or dietitian for the purpose of improving a person's quality of life and overall health and well-being is recommended.       </p>
     </div>
-
-    <div class="section">
+  
+    <div class="section" onclick="toggleSlide(this)">
       <h2 class="heading">COUNSELLING SERVICES</h2>
       
       <p class="paragraph">
@@ -355,19 +387,21 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         Professional counselling is confidential and non-judgmental.
         Counselling can provide people with the opportunity to share their views, be heard and gain new perspectives on their situation and experiences. Counselling can help people to gain clarity surrounding issues.
         Together with their counsellor people identify and work towards achieving the desired outcomes and goals for counselling
-            </div>
-
-    <div class="section">
-      <h2 class="heading">COUNSELLING SERVICES</h2>
-      
-      <p class="paragraph">
-        What is counselling?
-        Counselling is a form of ‘talk therapy’.
-        It is a process where an individual, couple or family meet with a trained professional counsellor to talk about issues and problems that they are facing in their lives.
-        Professional counselling is confidential and non-judgmental.
-        Counselling can provide people with the opportunity to share their views, be heard and gain new perspectives on their situation and experiences. Counselling can help people to gain clarity surrounding issues.
-        Together with their counsellor people identify and work towards achieving the desired outcomes and goals for counselling
+      </p>
     </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+      $('.departments-slider').slick();
+    });
+
+    </script>
+  
+    <script>
+      function toggleSlide(section) {
+        section.classList.toggle("slide-up");
+      }
+    </script>
     
     <div class="section">
       <h2 class="heading">WHERE AND HOW TO START…</h2>
@@ -430,8 +464,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
           <li style="color: #FFFF;"><i class="fas fa-phone"></i> 0703 115 502, 0790 103 032</li>
           <li style="color: #FFFF;"><i class="fas fa-clock"></i> Mon - Fri 8:00 AM to 5:00 PM</li>
         </ul>
-        <ul class="twitter">
-            <a class="twitter-timeline" data-width="330" data-height="330" data-theme="light" href="https://twitter.com/GoCareInstitute?ref_src=twsrc%5Etfw">Tweets by GoCareInstitute</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>        </ul>
+        <!--<ul class="twitter">
+            <a class="twitter-timeline" data-width="330" data-height="330" data-theme="light" href="https://twitter.com/GoCareInstitute?ref_src=twsrc%5Etfw">Tweets by GoCareInstitute</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>        </ul>-->
       </div>
     </div>        
     <div class="bottom-details">
