@@ -1882,6 +1882,12 @@ span.wpcf7-not-valid-tip {
   @media (max-width: 700px){
     footer{
       position: relative;
+      .content .top .media-icons a {
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
+        line-height: 35px;
+        
     }
     .content .top .logo-details{
       font-size: 26px;
@@ -1892,8 +1898,8 @@ span.wpcf7-not-valid-tip {
       font-size: 14px;
       line-height: 35px;
     }
-    footer .content .link-boxes .box{
-      width: calc(100% / 3 - 10px);
+    footer .content .link-boxes .box {
+      width: 100%;
     }
     footer .content .link-boxes .input-box{
       width: 60%;
@@ -1922,6 +1928,41 @@ span.wpcf7-not-valid-tip {
   }
 
 
+  /* Base styles for the footer */
+/* ... (existing CSS code) ... */
+
+/* Media query for mobile responsiveness */
+@media (max-width: 700px) {
+  .link-boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-boxes .box {
+    margin-bottom: 20px;
+  }
+
+  .link-boxes .box li {
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+  }
+
+  .link-boxes .box li a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .link-boxes .box li i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+
+
 .course-card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -1929,7 +1970,33 @@ span.wpcf7-not-valid-tip {
     background-color: #f9f9f9;
 }
 
-  
-  
-  
-  
+ /* whatsapp Floating Button */ 
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Adjust icon size if needed */
+.whatsapp-button i {
+  font-size: 30px;
+}
+
+.form-group input[type="submit"] {
+  color: white;
+}

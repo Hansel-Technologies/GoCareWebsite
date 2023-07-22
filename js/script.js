@@ -86,7 +86,7 @@ const testimonials = [
 
   ];
   
-  const testimonialsPerPage = 5;
+  const testimonialsPerPage = 6;
   let currentPage = 1;
   
   const testimonialContainer = document.getElementById("testimonial-container");
