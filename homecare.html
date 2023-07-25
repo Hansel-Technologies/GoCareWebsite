@@ -108,18 +108,46 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel="apple-touch-icon" href="images/cropped-nwh-site-icon-180x180.png">
 <meta name="msapplication-TileImage" content="https://gocareinstitute.ac.ke/wp-content/uploads/cropped-nwh-site-icon-270x270.png">
 
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5bd842b8084b9d001130e7a6&amp;product=inline-share-buttons" async="async"></script>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5bd842b8084b9d001130e7a6&amp;product=inline-share-buttons" async="async">
+
+
+</script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Slider CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+<!-- Slick Slider JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.departments-slider').slick();
+  });
+</script>
+
+<script>
+  function toggleSlide(section) {
+    section.classList.toggle("slide-up");
+  }
+</script>
 
 <style>
+  body {
+      margin: 0;
+      padding: 0;
+    }
+    
   .section {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-  }
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
   
   .section.slide-up {
     transform: translateY(-100%);
@@ -189,6 +217,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
   grid-gap: 20px;
   padding: 20px;
 }
+
+
 </style>
 
 </head>
@@ -330,7 +360,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <!-- Main Page Content -->
 
 
-<body>
+<body>  
   <div class="container">
     <div class="section">
       <h1 class="heading">Home Based Care</h1>
@@ -362,11 +392,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </p>
       </div>
     </div>
-  </div>
+  
   <div class="section-grid">
     <div class="section">
       <h1 class="heading">Home Based Care</h1>
-      <img src="slider4.jpg" alt="Image Description">
+     
 
       <div class="card2">
         <ul class="bullets">
@@ -395,6 +425,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       </p>
     </div>
   </div>
+  
     
     <div class="section">
       <h2 class="heading">Available Services;</h2>
@@ -405,24 +436,24 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
               </p>
       <ul class="bullets">
         <li>Trained caregivers and licensed nurses that assist with personal care needs ranging from stand-by assistance to full care depending on each client’s individual needs</li>
-<li>Bathing, grooming, and overall appearance and skin care</li>
-<li>Mobility assistance and patient safety management </li>
-<li>Incontinence care, toileting needs, and safety in the bathroom</li>
-<li>Assistance with preparing and serving meals, feeding and support for special diets</li>
-<li>Care for persons with memory issues or cognitive impairments</li>
-<li>Medication reminders and administration </li>
-<li>Support for physician-prescribed nutrition and exercise programs
-<li>Change in condition monitoring</li>
-<li>Palliative and hospice care</li> 
-<li>Checking and monitoring vitals (Blood pressure, blood sugar, temperatures)</li>
-<li>Wound dressing and post-surgery care  </li>
-<li>Basic and specialized nursing care </li>
-<li>Post hospital admission care and recovery support </li>
-<li>Companionship and escort to hospital/doctor’s appointments</li>
-<li>Assistance with position changes and transfers for those clients that are bedbound or may need assistance with getting in and out of bed</li>
-<li>Assisting with outings, social events and other activities of interest to maintain engagement both physically, socially and emotionally</li>
-<li>General and specialized nursing care, patient management, care and support</li>
-<li>Any other appropriate service as would be agreed with the client </li>
+        <li>Bathing, grooming, and overall appearance and skin care</li>
+        <li>Mobility assistance and patient safety management </li>
+        <li>Incontinence care, toileting needs, and safety in the bathroom</li>
+        <li>Assistance with preparing and serving meals, feeding and support for special diets</li>
+        <li>Care for persons with memory issues or cognitive impairments</li>
+        <li>Medication reminders and administration </li>
+        <li>Support for physician-prescribed nutrition and exercise programs
+        <li>Change in condition monitoring</li>
+        <li>Palliative and hospice care</li> 
+        <li>Checking and monitoring vitals (Blood pressure, blood sugar, temperatures)</li>
+        <li>Wound dressing and post-surgery care  </li>
+        <li>Basic and specialized nursing care </li>
+        <li>Post hospital admission care and recovery support </li>
+        <li>Companionship and escort to hospital/doctor’s appointments</li>
+        <li>Assistance with position changes and transfers for those clients that are bedbound or may need assistance with getting in and out of bed</li>
+        <li>Assisting with outings, social events and other activities of interest to maintain engagement both physically, socially and emotionally</li>
+        <li>General and specialized nursing care, patient management, care and support</li>
+        <li>Any other appropriate service as would be agreed with the client </li>
 
       </ul>
     </div>
@@ -474,19 +505,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       </p>
     </div>
     </div>
-    <script>
-      $(document).ready(function() {
-      $('.departments-slider').slick();
-    });
+ 
 
-    </script>
-  
-    <script>
-      function toggleSlide(section) {
-        section.classList.toggle("slide-up");
-      }
-    </script>
-    
+       
     <div class="section">
       <h2 class="heading">WHERE AND HOW TO START…</h2>
       
@@ -500,7 +521,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
     <!-- Include your JavaScript file -->
   <script src="js/floatingbutton.js"></script>
-  </div>
+  
+
 
 
 
@@ -512,7 +534,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
   </a>
 </div> 
 
-
+</div>
 
   <footer>
     <div class="content">
