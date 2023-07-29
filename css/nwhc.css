@@ -1880,6 +1880,68 @@ span.wpcf7-not-valid-tip {
     }
   }
   @media (max-width: 700px){
+
+    .content .top .media-icons a {
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+
+    .content .top .logo-details {
+      font-size: 26px;
+    }
+
+    /* Keep existing styles for the link-boxes unchanged */
+  footer .content .link-boxes .box {
+    width: 100%;
+  }
+  /* Reduce the width of the input-box */
+  footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+  /* Adjust the font size for the bottom details */
+  .bottom-details .bottom_text p,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+}
+
+/* Media query for even smaller screens (max-width: 520px) */
+@media (max-width: 520px) {
+  /* Adjust the position of the horizontal line before the footer */
+  footer::before {
+    top: 145px;
+  }
+
+  /* Change the flex-direction to column for the top section */
+  footer .content .top {
+    flex-direction: column;
+  }
+
+  /* Adjust the margin for the media-icons */
+  .content .top .media-icons {
+    margin-top: 16px;
+  }
+
+  /* Make the link-boxes items appear in a grid format */
+  footer .content .link-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between grid items */
+  }
+
+  /* Make the link-boxes span the full width of the grid */
+  footer .content .link-boxes .box {
+    width: calc(100% / 2 - 10px);
+  }
+
+  /* Adjust the width of the input-box for small screens */
+  footer .content .link-boxes .input-box {
+    width: 100%;
+  }
+}
+
     footer{
       position: relative;
       .content .top .media-icons a {
@@ -1971,7 +2033,7 @@ span.wpcf7-not-valid-tip {
 }
 
  /* whatsapp Floating Button */ 
-}
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
