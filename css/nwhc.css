@@ -1701,7 +1701,7 @@ footer::before {
   top: 100px;
   height: 1px;
   width: 100%;
-  background: #AFAFB6;
+  background: #55165e;
 }
 
 footer .content {
@@ -1739,8 +1739,48 @@ footer .content .top {
   transition: all 0.4s ease;
 }
 
-.top .media-icons a:nth-child(1) { background: #4267B2; }
-.top .media-icons a:nth-child(1):hover { color: #4267B2; background: #fff; }
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: green;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: green;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(6){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(6):hover{
+  color: #FF0000;
+  background: #fff;
+}
 
 /* ... Repeat styles for media-icons a:nth-child(2) to a:nth-child(6) ... */
 
@@ -1755,7 +1795,7 @@ footer .content .link-boxes .box {
 }
 
 .content .link-boxes .box .link_name {
-  color: #fff;
+  color: #0000;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1768,7 +1808,7 @@ footer .content .link-boxes .box {
   bottom: -2px;
   height: 2px;
   width: 35px;
-  background: #fff;
+  background: #0000;
 }
 
 .content .link-boxes .box li {
@@ -1776,8 +1816,8 @@ footer .content .link-boxes .box {
   list-style: none;
 }
 
-.content .link-boxes .box li a {
-  color: #fff;
+.content .link-boxes .box {
+  color: #0000;
   text-decoration: none;
   transition: all 0.4s ease;
 }
@@ -1810,7 +1850,7 @@ footer .content .link-boxes .box {
 }
 
 .link-boxes .input-box input[type="button"] {
-  background: #fff;
+  background: #0000;
   color: #140B5C;
   border: none;
   font-size: 18px;
@@ -1842,7 +1882,7 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
   font-size: 14px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
   opacity: 0.8;
   text-decoration: none;
 }
@@ -1861,60 +1901,6 @@ footer .bottom-details .bottom_text {
     font-size: 14px;
     line-height: 35px;
   }
-  /* Adjust the font size for the logo */
-  .content .top .logo-details {
-    font-size: 26px;
-  }
-
-  /* Keep existing styles for the link-boxes unchanged */
-  footer .content .link-boxes .box {
-    width: 100%;
-  }
-
-  /* Reduce the width of the input-box */
-  footer .content .link-boxes .input-box {
-    width: 60%;
-  }
-
-  /* Adjust the font size for the bottom details */
-  .bottom-details .bottom_text p,
-  .bottom-details .bottom_text a {
-    font-size: 12px;
-  }
-}
-
-/* Media query for small screens (max-width: 700px) */
-@media (max-width: 700px) {
-  /* Keep existing styles for the media icons unchanged */
-  .content .top .media-icons a {
-    height: 35px;
-    width: 35px;
-    font-size: 14px;
-    line-height: 35px;
-  }
-
-  /* Adjust the font size for the logo */
-  .content .top .logo-details {
-    font-size: 26px;
-  }
-
-  /* Keep existing styles for the link-boxes unchanged */
-  footer .content .link-boxes .box {
-    width: 100%;
-  }
-
-  /* Reduce the width of the input-box */
-  footer .content .link-boxes .input-box {
-    width: 60%;
-  }
-
-  /* Adjust the font size for the bottom details */
-  .bottom-details .bottom_text p,
-  .bottom-details .bottom_text a {
-    font-size: 12px;
-  }
-
-  /* Adjust the width and alignment of the contact-info content on small screens */
   .contact-info-wrapper {
     width: 100%;
     text-align: left; /* Adjust the alignment as needed */
@@ -1925,7 +1911,39 @@ footer .bottom-details .bottom_text {
   .contact-info-wrapper p {
     margin: 8px 0;
   }
+  /* Adjust the font size for the logo */
+  .content .top .logo-details {
+    font-size: 26px;
+  }
+
+  /* Keep existing styles for the link-boxes unchanged */
+  footer .content .link-boxes .box {
+    width: 100%;
+  }
+
+  /* Reduce the width of the input-box */
+  footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+
+  /* Adjust the font size for the bottom details */
+  .bottom-details .bottom_text p,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+  /* Adjust the width and alignment of the contact-info content on small screens */
+  .contact-info-wrapper {
+    width: 100%;
+    text-align: left; /* Adjust the alignment as needed */
+     /* Change the text color to black */
+  }
+
+  
 }
+
+
+
+
 
 
 
