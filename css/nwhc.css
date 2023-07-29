@@ -1861,7 +1861,6 @@ footer .bottom-details .bottom_text {
     font-size: 14px;
     line-height: 35px;
   }
-
   /* Adjust the font size for the logo */
   .content .top .logo-details {
     font-size: 26px;
@@ -1884,38 +1883,47 @@ footer .bottom-details .bottom_text {
   }
 }
 
-/* Media query for even smaller screens (max-width: 520px) */
-@media (max-width: 520px) {
-  /* Adjust the position of the horizontal line before the footer */
-  footer::before {
-    top: 145px;
+/* Media query for small screens (max-width: 700px) */
+@media (max-width: 700px) {
+  /* Keep existing styles for the media icons unchanged */
+  .content .top .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
   }
 
-  /* Change the flex-direction to column for the top section */
-  footer .content .top {
-    flex-direction: column;
+  /* Adjust the font size for the logo */
+  .content .top .logo-details {
+    font-size: 26px;
   }
 
-  /* Adjust the margin for the media-icons */
-  .content .top .media-icons {
-    margin-top: 16px;
-  }
-
-  /* Make the link-boxes items appear in a grid format */
-  footer .content .link-boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
-    gap: 20px; /* Adjust the gap between grid items */
-  }
-
-  /* Make the link-boxes span the full width of the grid */
+  /* Keep existing styles for the link-boxes unchanged */
   footer .content .link-boxes .box {
-    width: calc(100% / 2 - 10px);
+    width: 100%;
   }
 
-  /* Adjust the width of the input-box for small screens */
+  /* Reduce the width of the input-box */
   footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+
+  /* Adjust the font size for the bottom details */
+  .bottom-details .bottom_text p,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+
+  /* Adjust the width and alignment of the contact-info content on small screens */
+  .contact-info-wrapper {
     width: 100%;
+    text-align: left; /* Adjust the alignment as needed */
+    color: #000; /* Change the text color to black */
+  }
+
+  /* Adjust the margin for the contact-info paragraphs */
+  .contact-info-wrapper p {
+    margin: 8px 0;
   }
 }
 
