@@ -1879,27 +1879,33 @@ span.wpcf7-not-valid-tip {
       margin-top: 10px;
     }
   }
-  @media (max-width: 700px){
+ /* Existing styles for the footer */
 
-    .content .top .media-icons a {
-      height: 35px;
-      width: 35px;
-      font-size: 14px;
-      line-height: 35px;
-    }
+/* Media query for small screens (max-width: 700px) */
+@media (max-width: 700px) {
+  /* Keep existing styles for the media icons unchanged */
+  .content .top .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
 
-    .content .top .logo-details {
-      font-size: 26px;
-    }
+  /* Adjust the font size for the logo */
+  .content .top .logo-details {
+    font-size: 26px;
+  }
 
-    /* Keep existing styles for the link-boxes unchanged */
+  /* Keep existing styles for the link-boxes unchanged */
   footer .content .link-boxes .box {
     width: 100%;
   }
+
   /* Reduce the width of the input-box */
   footer .content .link-boxes .input-box {
     width: 60%;
   }
+
   /* Adjust the font size for the bottom details */
   .bottom-details .bottom_text p,
   .bottom-details .bottom_text a {
@@ -1942,52 +1948,6 @@ span.wpcf7-not-valid-tip {
   }
 }
 
-    footer{
-      position: relative;
-      .content .top .media-icons a {
-        height: 35px;
-        width: 35px;
-        font-size: 14px;
-        line-height: 35px;
-        
-    }
-    .content .top .logo-details{
-      font-size: 26px;
-    }
-    .content .top .media-icons a{
-      height: 35px;
-      width: 35px;
-      font-size: 14px;
-      line-height: 35px;
-    }
-    footer .content .link-boxes .box {
-      width: 100%;
-    }
-    footer .content .link-boxes .input-box{
-      width: 60%;
-    }
-    .bottom-details .bottom_text p,
-    .bottom-details .bottom_text a{
-      font-size: 12px;
-    }
-  }
-  @media (max-width: 520px){
-    footer::before{
-      top: 145px;
-    }
-    footer .content .top{
-      flex-direction: column;
-    }
-    .content .top .media-icons{
-      margin-top: 16px;
-    }
-    footer .content .link-boxes .box{
-      width: calc(100% / 2 - 10px);
-    }
-    footer .content .link-boxes .input-box{
-      width: 100%;
-    }
-  }
 
 
   /* Base styles for the footer */
