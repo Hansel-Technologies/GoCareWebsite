@@ -1941,6 +1941,52 @@ footer .bottom-details .bottom_text {
   
 }
 
+/* Add your existing CSS styles here */
+/* Your existing CSS styles here */
+
+/* Your existing CSS styles here */
+
+/* Adjust styles for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 767px) {
+  footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .link-boxes .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  footer .logo-details,
+  footer .link-boxes,
+  footer .contact-info {
+    margin-top: 10px;
+  }
+}
+
+/* Keep the logo and links on the left and the contact details on the right for larger screens */
+@media screen and (min-width: 768px) {
+  footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  footer .link-boxes .box {
+    display: flex;
+    gap: 20px;
+  }
+
+  footer .contact-info {
+    text-align: right;
+  }
+}
+
 
 
 
